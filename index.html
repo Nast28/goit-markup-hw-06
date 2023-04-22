@@ -30,7 +30,11 @@
             >Web<span class="logo-header">Studio</span></a
           >
           <ul class="menu-nav list">
-            <li><a href="./index.html" class="nav-link link active-page">Studio</a></li>
+            <li>
+              <a href="./index.html" class="nav-link link active-page"
+                >Studio</a
+              >
+            </li>
             <li>
               <a href="./portfolio.html" class="nav-link link">Portfolio</a>
             </li>
@@ -59,7 +63,9 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button type="button" class="button" data-modal-open>Order Service</button>
+          <button type="button" class="button" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
 
@@ -69,9 +75,9 @@
           <ul class="list feature-container">
             <li class="feature-list">
               <div class="feature-icon-container">
-              <svg class="feature-icon" width="64px" height="64px">
-                <use href="./images/icons.svg#icon-antenna"></use>
-              </svg>
+                <svg class="feature-icon" width="64px" height="64px">
+                  <use href="./images/icons.svg#icon-antenna"></use>
+                </svg>
               </div>
               <h3 class="feature-title">Strategy</h3>
               <p class="feature-text">
@@ -84,7 +90,7 @@
                 <svg class="feature-icon" width="64px" height="64px">
                   <use href="./images/icons.svg#icon-clock"></use>
                 </svg>
-                </div>
+              </div>
               <h3 class="feature-title">Punctuality</h3>
               <p class="feature-text">
                 Bring the key message to the brand's audience for the best price
@@ -96,7 +102,7 @@
                 <svg class="feature-icon" width="64px" height="64px">
                   <use href="./images/icons.svg#icon-diagram"></use>
                 </svg>
-                </div>
+              </div>
               <h3 class="feature-title">Diligence</h3>
               <p class="feature-text">
                 Research and confirm brands that present the strongest digital
@@ -108,7 +114,7 @@
                 <svg class="feature-icon" width="64px" height="64px">
                   <use href="./images/icons.svg#icon-astronaut"></use>
                 </svg>
-                </div>
+              </div>
               <h3 class="feature-title">Technologies</h3>
               <p class="feature-text">
                 Design practice focused on digital experiences. We bring forth a
@@ -425,16 +431,119 @@
             </li>
           </ul>
         </div>
+
+        <div class="footer-subscribe">
+          <h3 class="footer-subscribe-title">Subscribe</h3>
+          <form class="form-subscribe">
+          <input
+            type="text"
+            name="user-subscribe"
+            aria-lable="subscribe"
+            class="input-subscribe"
+            placeholder="E-mail"
+          />
+          <button type="submit" class="subscribe-btn">Subscribe
+              <svg width="24px" height="24px" class="subscribe-icon">
+                <use href="./images/icons.svg#icon-telegram"></use>
+              </svg>
+          </button>
+          </form>
+        </div>
       </div>
     </footer>
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="close-modal-btn" data-modal-close>
-        <svg class="close-modal-icon" width="8px" height="8px">
-          <use href="./images/icons.svg#icon-close-back"></use>
-        </svg>
+          <svg class="close-modal-icon" width="8px" height="8px">
+            <use href="./images/icons.svg#icon-close-back"></use>
+          </svg>
         </button>
+
+        <p class="modal-title">Leave your contacts and we will call you back</p>
+
+        <form>
+          <div>
+            <lable for="user-name" class="input-text">Name</lable>
+            <div class="input-wrap">
+              <input
+                type="text"
+                name="user-name"
+                id="user-name"
+                class="modal-input"
+              />
+              <svg width="18px" height="18px" class="input-icon">
+                <use
+                  href="./images/icons.svg#icon-name"
+                  class="icon-modal"
+                ></use>
+              </svg>
+            </div>
+          </div>
+          <div>
+            <lable for="user-tel" class="input-text">Phone</lable>
+            <div class="input-wrap">
+              <input
+                type="tel"
+                name="user-tel"
+                id="user-tel"
+                class="modal-input"
+              />
+              <svg width="18px" height="24px" class="input-icon">
+                <use
+                  href="./images/icons.svg#icon-phone"
+                  class="icon-modal"
+                ></use>
+              </svg>
+            </div>
+          </div>
+          <div>
+            <lable for="user-email" class="input-text">Email</lable>
+            <div class="input-wrap">
+              <input
+                type="email"
+                name="user-email"
+                id="user-email"
+                class="modal-input"
+              />
+              <svg width="18px" height="24px" class="input-icon">
+                <use
+                  href="./images/icons.svg#icon-email"
+                  class="icon-modal"
+                ></use>
+              </svg>
+            </div>
+          </div>
+
+          <div>
+            <lable for="user-text" class="input-text">Comment</lable>
+            <textarea
+              name="user-text"
+              id="user-text"
+              class="modal-textarea"
+              placeholder="Text input"
+            ></textarea>
+          </div>
+
+          <div class="policy-wrap">
+            <input
+              type="checkbox"
+              id="modal-policy"
+              class="input-check visually-hidden"
+            />
+            <label for="modal-policy" class="policy-text">
+              <span class="checkbox-icon">
+                <svg width="10px" height="8px">
+                  <use href="./images/icons.svg#icon-click"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+              <a href=""> Privacy Policy </a>
+            </label>
+          </div>
+
+          <button type="submit" class="modal-btn">Send</button>
+        </form>
       </div>
     </div>
 
